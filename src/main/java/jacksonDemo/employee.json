@@ -1,0 +1,12 @@
+{
+	"employeeName": "John",
+	"age": 25,
+	"position": "Software Engineer",
+	"salary": 80000,
+	"skills": [
+		"java",
+		"python",
+		"javascript",
+		"automation"
+	]
+}
