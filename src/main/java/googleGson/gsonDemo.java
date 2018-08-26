@@ -1,21 +1,36 @@
 package googleGson;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonIOException;
 
 import jacksonDemo.Employee;
 
+
 public class gsonDemo 
 {
-	public static void main(String[] args) 
+	public static void main(String[] args) throws JsonIOException, IOException 
 	{
+		try
+		{
 		Gson gson=new GsonBuilder().setPrettyPrinting().create();
 		Employee employee=addEmployee();
+		
+		// object to json string
 		String empJson=gson.toJson(employee);
+		
 		System.out.println(empJson);
+		}
+		catch(Exception e)
+		{
+			System.out.println(e.getMessage());
+		}
+	
 	}
 	
 
