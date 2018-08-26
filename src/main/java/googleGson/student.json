@@ -1,0 +1,10 @@
+{
+	"name": "Steve",
+	"age": 25,
+	"subjects": [
+		"Maths",
+		"Science",
+		"physics",
+		"chemistry"
+	]
+}
